@@ -21,13 +21,13 @@ The primary objective of the course is to provide a capstone experience for CS s
 Learning Outcomes:
 ----------------
 Upon successful completion of the course, students will be able to:
-      - Exhibit the ability to work effectively in a team environment.
-      - Demonstrate good understanding of essential project management concepts and skills.
-      - Develop a sound and complete project plan and exhibit the ability to execute the plan.
-      - Apply concepts and technologies from various areas of computer science to the construction of a software system.
-      - Use software engineering principles in the construction of a software system.
-      - Prepare and conduct professional project presentations to clients and fellow computing professionals.
-      - Identify, evaluate, and utilize new technologies specific to the project.
+- Exhibit the ability to work effectively in a team environment.
+- Demonstrate good understanding of essential project management concepts and skills.
+- Develop a sound and complete project plan and exhibit the ability to execute the plan.
+- Apply concepts and technologies from various areas of computer science to the construction of a software system.
+- Use software engineering principles in the construction of a software system.
+- Prepare and conduct professional project presentations to clients and fellow computing professionals.
+- Identify, evaluate, and utilize new technologies specific to the project.
 
 Timetable
 ---------
