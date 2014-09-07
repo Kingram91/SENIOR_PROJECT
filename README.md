@@ -8,7 +8,7 @@ Group Members
 
 [Pan Guanhua](https://github.com/)
 
-[Mohammad Bangoura](https://github.com/)
+[Mohammad Bangoura](https://github.com/bangour2)
 
 [Aaron Hevenstone](https://github.com/)
 
