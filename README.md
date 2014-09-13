@@ -6,7 +6,7 @@ Group Members
 
 [James Kimani](https://github.com/jwkimani)
 
-[Pan Guanhua](https://github.com/)
+[Pan Guanhua](https://github.com/panguanhua)
 
 [Mohammad Bangoura](https://github.com/bangour2)
 
