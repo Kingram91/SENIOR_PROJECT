@@ -1,0 +1,305 @@
+Software Development Plan
+
+Version <1.0>
+
+<Team #>
+
+<Team members: Mohammad Bangoura,Kquane Ingram, James Kimani, Aaron Heavenstone, Guanhua Pan>
+
+
+
+Revision History
+Date
+Version
+Description	
+Authors
+			
+
+08/09/2014
+		
+			
+1.0
+		
+
+
+
+Software Development Plan
+		
+			
+Mohammad Bangoura
+Kquane Ingram
+James Kimani
+Aaron Hevenstone
+Guanhua Pan
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+	
+	1. Introduction	
+	
+		1.1 Purpose							3
+	
+		1.2 Scope							3	
+	
+	1.3 Overview							4
+		
+		1.4 Definitions, Acronyms and Abbreviations			4
+	
+	2. Project Overview
+	
+		2.1 Project purpose, scope and objectives			4
+	
+	2.2 Assumptions and constraints					5
+	
+	2.3 Project deliverables						5
+	
+	3. Project Organization
+	
+	3.1 Organizational Structure					6
+	
+	3.2 External Interfaces						6
+	
+	3.3 Social and Ethical Issues					6
+	
+	4. Management Process
+	
+	4.1 Project Plan							7
+	
+	4.1.1 Phase Plan					7
+	
+	4.1.2 Project Schedule					7
+	
+	4.2 Project Monitoring and control				
+	
+	4.2.1 Schedule control plan				8
+	
+	4.2.2 Reporting Plan					8
+	
+	5. Supporting process plans
+	
+	5.1 Documentation plan						9
+	
+	6. References
+Introduction
+
+This software development plan describes our plan for conducting a software development effort. It details methods that are used and to be followed throughout the development process. This document will help guide the developers and provide a detailed description of all attributes and methods for our Web-based management system. 
+Purpose
+This purpose is to show the entire plan that is required in order to develop and upgrade the system. It lays out every aspect of the project’s Software Development. This software development plan provides a low level description of the Web-based Event management system and gives insight into the structure and design of each component. 
+Another objective of this Software Development Plan is to define the phases required for implementing a Web-based Event management System.
+
+Scope
+
+The Web-based Management system is composed of three components: an Administration implementation that receives, performs and updates requests, a client implementation which post events, and an attendee implementation which registers for events. The system features are divided into two groups: core features that are essential to the function of the application, and additional features that provide extra functionality. 
+
+1. SERVER ACCESS
+2. WELCOME PAGE
+3. CREATE EVENT MESSAGE 
+4. EVENT AVAILABILITY CHECK
+5. EVENT CREATION
+Overview
+This document contains information regarding the Web-based Event Management System.  This information explains the necessary aspects of the project and lays out the foundation for how the project will be implemented.
+
+
+Definitions, Acronyms and Abbreviations
+
+HTML Language used to write web pages 
+Server - A a running software application capable of accepting requests from clients and returning the appropriate response. In our case, server-client communication in regards to user access.
+Project Overview
+Project purpose, scope and objectives
+
+The purpose of this SDD is to provide a low-level description of the Web-based Event Management System (WEMS) that allows users to create, host, and register for any type of event.  Users who choose to create event will be able to choose a location, a time, and the capacity.  The system will then store the information in a database and allow other users to sign up for the event until the capacity is reached. 
+Each user who signs up for even will receive a confirmation email.
+Certain events may include vouchers in order to attend, which will be available to those who register.
+Users may also choose to cancel their reservations, which will open up their slot in the event capacity.
+A database will be kept of all the event creators and the event attendees.  This information should only be viewable by the site administrators and the event creators.
+
+Additional Functional Requirements:
+Hosting Server for the Application
+Web Interface
+Possible PDF Licence to allow printing on computers (vouchers)
+SSL Certificate for communication security
+
+Assumptions and constraints
+End-users can view list of events and register. The only constraints may include age or specific permission from the event creator.
+
+If the application hosting is outsourced, we will need development and a QA staging area.
+
+Database Requirements and Security Features:
+Data needs to be stored in an efficient database with moderately high level security measures incorporating SSL certificates and protocols for keeping secure data transmission between client and server.
+
+Client and Server GUI:
+A web-based GUI will be necessary to allow users to browse and create events.
+Project deliverables
+Software Development Plan - 9/8/14
+Software Requirements Specification - 9/29/14
+Software Design Document - 10/31/14
+Project Organization
+Organizational Structure
+
+External Interfaces
+Infrastructure:
+Data Translation interface to allow the sharing of data between two different technologies.
+Interprocess Communications  (IPCs) to transfer requests and data between a database and its clients.
+Social and Ethical Issues
+
+Ethical issues are the fruit of the junction of technology and people embedded in the social system.  The reliability of data privacy of an attendee stored in multiple networked computers can be problematic depending on the nature of socio-technical systems.  Age verification for certain events may also cause issues.
+
+The database will be backed up on the server in order to overcome system failures.
+
+
+Management Process
+Project Plan
+Phase Plan
+
+Task Name
+Duration
+Start
+Finish
+Phase 1: Software Requirements
+10 days
+8/29/2014
+9/7/2014
+develop Software Development Plan
+10 days
+8/29/2014
+9/7/2014
+Phase 2: Software Design
+20 days
+9/9/2014
+9/29/2014
+develop software Design Description
+20 days
+9/9/2014
+9/29/2014
+Phase 3: Software Unit development
+30 days
+10/1/2014
+10/31/2014
+code Software Units
+22 days
+10/1/2014
+10/23/2014
+Conduct Unit Tests
+8 days
+9/23/2014
+10/31/2014
+Phase 4: Delivery
+15 days
+11/1/2014
+11/16/2014
+prepare Qualification Test Plan
+15 days
+11/1/2014
+11/16/2014
+Phase 5: Use
+15 days
+11/17/2014
+12/1/2014
+provide Life-Cycle support
+15 days
+11/17/2014
+12/1/2014
+
+
+Project Schedule
+
+Project Milestone
+Associated Deliverable and Target Date
+1.      Start of Project
+·         Signed Project Proposal
+·         Day 00
+2.    Project development plan
+·         Day 14
+·         Final Specification
+·         Final algorithm Specifications
+·         Final algorithm Images
+·         Final algorithm files
+·         Final coding Specifications
+·         Final coding UML
+·         Final coding Language files
+·         Final Presentation Specifications
+·         Final Presentation Files
+·         Final Presentation Images
+·         Final list of project models for determining How functions should be shown to present
+3.      Requirements Review session
+Prepared Software Requirements Specification document (SRS)
+·         Day 21
+·         Project Review
+·         Document Review
+·         Coding part Review
+·         Presentation Review
+4.     project overview and requirement
+Approval of a test strategy
+Plan document
+·         Day 27
+·         Test Project document
+·         Test Coding
+·         Test Strategy document
+5.      Work progress presentation
+·         Day 32
+6.      Final Submit
+·         Day 12/08/2014
+
+
+
+Project Monitoring and control
+Schedule control plan
+
+The project manager (leader) maintains a summary schedule showing the expected date of each milestone which  is provided to the (rest of group), who may set new priorities or recommend corrective action.
+corrective actions: We will follow up with any feedback.
+Reporting Plan
+
+The Weekly reports will be prepared by the Project Manager (leader ) at least once per week.  This includes:
+- schedule estimates
+
+
+Supporting process plans
+Documentation plan
+
+Planned Documents
+Due Date
+Weekly Reports
+Every Week
+Project Development Plan (SDP)
+Week 3
+Software Requirements Document (SRS)
+Week 6
+Software Design Document (SDD)
+Week 8
+Final Report
+Week 17
+
+
+References
+Teaching Tools for the Computing Curriculum. ComputingCases.org. july, 2006, http://computingcases.org/general_tools/sia/intro_SIA.html
+
+Roger Pressman. 2010. Software Engineering: A Practitionner’ Approach.  New York: McGraw-Hill
+
+
+
