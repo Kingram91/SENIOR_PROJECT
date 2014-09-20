@@ -1,0 +1,13 @@
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/bin/Debug/EventFoundryAndroid.dll.mdb
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/bin/Debug/EventFoundryAndroid.dll
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/bin/Debug/EventFoundryAndroid.EventFoundryAndroid.apk
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/android/bin/EventFoundryAndroid.EventFoundryAndroid.apk
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/res/layout/main.xml
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/res/values/strings.xml
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/res/drawable/icon.png
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/R.cs.flag
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/bin/Debug/EventFoundryAndroid.EventFoundryAndroid-Signed.apk
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/uploadflags.txt
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/EventFoundryAndroid.dll
+/Users/lilbear1212/Projects/Events-Foundry/EventFoundryAndroid/obj/Debug/EventFoundryAndroid.dll.mdb

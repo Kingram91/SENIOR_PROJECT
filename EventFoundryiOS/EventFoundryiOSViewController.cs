@@ -8,6 +8,9 @@ namespace EventFoundryiOS
 {
 	public partial class EventFoundryiOSViewController : UIViewController
 	{
+		UIScrollView scrollView;
+		UIImageView imageView;
+
 		public EventFoundryiOSViewController (IntPtr handle) : base (handle)
 		{
 		}
