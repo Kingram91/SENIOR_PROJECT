@@ -12,6 +12,7 @@ namespace EventFoundryAndroid
 	[Activity (Label = "EventFoundryAndroid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
+		// THIS IS A TEST
 		int count = 1;
 
 		protected override void OnCreate (Bundle bundle)
