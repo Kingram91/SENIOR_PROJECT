@@ -13,6 +13,7 @@ namespace EventFoundryAndroid
 	public class MainActivity : Activity
 	{
 		// This is a test comment!
+		// Test again does nothing
 		int count = 1;
 
 		protected override void OnCreate (Bundle bundle)
