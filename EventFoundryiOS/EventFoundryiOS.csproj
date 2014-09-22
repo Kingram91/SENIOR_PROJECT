@@ -105,6 +105,18 @@
     <Compile Include="EventFoundryiOSViewController.designer.cs">
       <DependentUpon>EventFoundryiOSViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyTicketsViewController.cs" />
+    <Compile Include="MyTicketsViewController.designer.cs">
+      <DependentUpon>MyTicketsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiscoverViewController.cs" />
+    <Compile Include="DiscoverViewController.designer.cs">
+      <DependentUpon>DiscoverViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavedEventsViewController.cs" />
+    <Compile Include="SavedEventsViewController.designer.cs">
+      <DependentUpon>SavedEventsViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
