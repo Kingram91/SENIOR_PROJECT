@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -58,16 +59,16 @@ public class MyMainActivity extends Activity
 
     public void onSectionAttached(int number) {
         switch (number) {
-            case 1:
+            case 1://sign in option
                 mTitle = getString(R.string.title_signin);
                 break;
-            case 2:
+            case 2: //discover option
                 mTitle = getString(R.string.title_discover);
                 break;
-            case 3:
+            case 3://My tickets option
                 mTitle = getString(R.string.title_mytickets);
                 break;
-            case 4:
+            case 4://Saved Events option
                 mTitle = getString(R.string.title_savedevents);
                 break;
         }
