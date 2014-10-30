@@ -52,9 +52,25 @@ public class MyMainActivity extends Activity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+        switch (position) {
+            case 0:
+                //Sign in
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+                break;
+            case 1:
+                //Discover
+                mTitle = getString(R.string.title_discover);
+                break;
+            case 2:
+                //Mytickets
+                mTitle = getString(R.string.title_mytickets);
+                break;
+            case 3:
+                //Saved Events
+                mTitle = getString(R.string.title_savedevents);
+                break;
+        }
     }
 
     public void onSectionAttached(int number) {
