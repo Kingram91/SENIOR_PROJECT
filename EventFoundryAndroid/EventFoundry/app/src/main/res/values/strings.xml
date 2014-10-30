@@ -11,5 +11,7 @@
     <string name="action_search">Search</string>
     <string name="action_share">Share</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="search_hint">What are you looking for?</string>
 
 </resources>
