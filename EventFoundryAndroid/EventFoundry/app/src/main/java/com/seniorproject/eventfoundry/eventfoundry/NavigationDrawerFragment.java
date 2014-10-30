@@ -76,7 +76,8 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         // Select either the default item (0) or the last selected item.
-        selectItem(mCurrentSelectedPosition);
+        //default item is set to 1(Discover)
+        selectItem(1);
     }
 
     @Override
@@ -102,9 +103,10 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
+                        getString(R.string.title_signin),
+                        getString(R.string.title_discover),
+                        getString(R.string.title_mytickets),
+                        getString(R.string.title_savedevents)
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
@@ -247,8 +249,8 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_example) {
-            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
+        if (item.getItemId() == R.id.action_search) {
+            Toast.makeText(getActivity(), "Search..", Toast.LENGTH_SHORT).show();
             return true;
         }
 
