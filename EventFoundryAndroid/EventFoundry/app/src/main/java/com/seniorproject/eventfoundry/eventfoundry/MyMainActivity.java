@@ -21,8 +21,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.SearchView;
 import android.widget.TextView;
-
-
 public class MyMainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
