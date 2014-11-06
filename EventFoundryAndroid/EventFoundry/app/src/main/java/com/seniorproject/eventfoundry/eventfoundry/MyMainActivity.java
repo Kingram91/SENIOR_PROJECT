@@ -44,8 +44,7 @@ public class MyMainActivity extends Activity
         mTitle = getTitle();
 
         // Set up the drawer.
-        mNavigationDrawerFragment.setUp(
-                R.id.navigation_drawer,
+        mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
     }
 
@@ -71,6 +70,15 @@ public class MyMainActivity extends Activity
                 //Saved Events
                 mTitle = getString(R.string.title_savedevents);
                 break;
+            case 4:
+                //register
+                intent = new Intent(this, RegistrationActivity.class);
+                startActivity(intent);
+
+            case 5:
+                //register
+                intent = new Intent(this, SettingActivity.class);
+                startActivity(intent);
         }
     }
 
@@ -88,6 +96,11 @@ public class MyMainActivity extends Activity
             case 4://Saved Events option
                 mTitle = getString(R.string.title_savedevents);
                 break;
+            case 5: //register option
+                mTitle = "Register";
+
+            case 6: //Setting option
+                mTitle = "Setting";
         }
     }
 
@@ -126,9 +139,16 @@ public class MyMainActivity extends Activity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
         if (id == R.id.action_settings) {
             return true;
         }
+
+
+        if (id == R.id.registrationButton) {
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
