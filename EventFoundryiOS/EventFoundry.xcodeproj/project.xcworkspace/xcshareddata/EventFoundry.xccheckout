@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B35C67D-D1E1-4B7E-9786-096707AA2601</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EventFoundry</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>913F5C2C6D14A4818F0BBD120045B909CC2EB190</key>
+		<string>https://github.com/Kingram91/SENIOR_PROJECT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SENIOR_PROJECT-master/EventFoundry/EventFoundry.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>913F5C2C6D14A4818F0BBD120045B909CC2EB190</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kingram91/SENIOR_PROJECT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>913F5C2C6D14A4818F0BBD120045B909CC2EB190</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>913F5C2C6D14A4818F0BBD120045B909CC2EB190</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>

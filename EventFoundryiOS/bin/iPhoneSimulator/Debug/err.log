@@ -1,2 +1,0 @@
-2014-09-20 15:46:09.711 EventFoundryiOS[3957:121499] MonoTouch: Socket error while connecting to MonoDevelop on 127.0.0.1:10000: Connection refused
-2014-09-20 15:46:10.683 EventFoundryiOS[3957:121465] Failed to set (contetnSize) user defined inspected property on (UIScrollView): [<UIScrollView 0x7e85a850> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key contetnSize.
