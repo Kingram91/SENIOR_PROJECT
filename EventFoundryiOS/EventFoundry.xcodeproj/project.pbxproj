@@ -22,6 +22,8 @@
 		757E1CE61A0427D500CC0168 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 757E1CDD1A0427D500CC0168 /* reveal-icon.png */; };
 		757E1CE71A0427D500CC0168 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757E1CDE1A0427D500CC0168 /* reveal-icon@2x.png */; };
 		758473C51A0BD8A7005C0F32 /* tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 758473C41A0BD8A7005C0F32 /* tag.png */; };
+		758473C91A0C98F7005C0F32 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758473C81A0C98F7005C0F32 /* LoginViewController.m */; };
+		758473CD1A0C9DF1005C0F32 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758473CC1A0C9DF1005C0F32 /* SettingsViewController.m */; };
 		75EB3B9C19FEA4D3005DBF44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3B9B19FEA4D3005DBF44 /* main.m */; };
 		75EB3B9F19FEA4D3005DBF44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3B9E19FEA4D3005DBF44 /* AppDelegate.m */; };
 		75EB3BA219FEA4D3005DBF44 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EB3BA119FEA4D3005DBF44 /* DiscoveryViewController.m */; };
@@ -60,6 +62,10 @@
 		757E1CDD1A0427D500CC0168 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		757E1CDE1A0427D500CC0168 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		758473C41A0BD8A7005C0F32 /* tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag.png; sourceTree = "<group>"; };
+		758473C71A0C98F7005C0F32 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = EventFoundry/LoginViewController.h; sourceTree = "<group>"; };
+		758473C81A0C98F7005C0F32 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = EventFoundry/LoginViewController.m; sourceTree = "<group>"; };
+		758473CB1A0C9DF1005C0F32 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = EventFoundry/SettingsViewController.h; sourceTree = "<group>"; };
+		758473CC1A0C9DF1005C0F32 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = EventFoundry/SettingsViewController.m; sourceTree = "<group>"; };
 		75EB3B9619FEA4D3005DBF44 /* EventFoundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventFoundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EB3B9A19FEA4D3005DBF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EB3B9B19FEA4D3005DBF44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,13 +132,13 @@
 			name = "MyTicketsViewController (Front)";
 			sourceTree = "<group>";
 		};
-		75197C291A02FF79000C08F6 /* RearViewController (Rear) */ = {
+		75197C291A02FF79000C08F6 /* SidebarView Controller(Rear) */ = {
 			isa = PBXGroup;
 			children = (
 				75197C2A1A030044000C08F6 /* SidebarViewController.h */,
 				75197C2B1A030044000C08F6 /* SidebarViewController.m */,
 			);
-			name = "RearViewController (Rear)";
+			name = "SidebarView Controller(Rear)";
 			sourceTree = "<group>";
 		};
 		757E1CD31A041EFC00CC0168 /* Frameworks */ = {
@@ -143,6 +149,7 @@
 				757E1CD11A041EF300CC0168 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		757E1CD41A04209B00CC0168 /* Library */ = {
@@ -179,13 +186,34 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		758473C61A0C98C3005C0F32 /* loginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				758473C71A0C98F7005C0F32 /* LoginViewController.h */,
+				758473C81A0C98F7005C0F32 /* LoginViewController.m */,
+			);
+			name = loginViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		758473CA1A0C9DC0005C0F32 /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				758473CB1A0C9DF1005C0F32 /* SettingsViewController.h */,
+				758473CC1A0C9DF1005C0F32 /* SettingsViewController.m */,
+			);
+			name = "Settings View Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		75EB3B8D19FEA4D3005DBF44 = {
 			isa = PBXGroup;
 			children = (
+				75EB3BA319FEA4D3005DBF44 /* Main.storyboard */,
 				75EB3B9819FEA4D3005DBF44 /* EventFoundry */,
 				75EB3BB219FEA4D3005DBF44 /* EventFoundryTests */,
-				757E1CD31A041EFC00CC0168 /* Frameworks */,
 				75EB3B9719FEA4D3005DBF44 /* Products */,
+				75EB3B9919FEA4D3005DBF44 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,13 +231,12 @@
 			children = (
 				75EB3B9D19FEA4D3005DBF44 /* AppDelegate.h */,
 				75EB3B9E19FEA4D3005DBF44 /* AppDelegate.m */,
-				75197C291A02FF79000C08F6 /* RearViewController (Rear) */,
+				75197C291A02FF79000C08F6 /* SidebarView Controller(Rear) */,
 				75197C261A02FEEE000C08F6 /* DiscoveryViewController (Front) */,
-				75197C271A02FF0B000C08F6 /* MyEventsViewController (Front) */,
 				75197C281A02FF26000C08F6 /* MyTicketsViewController (Front) */,
-				75EB3BA319FEA4D3005DBF44 /* Main.storyboard */,
-				757E1CD41A04209B00CC0168 /* Library */,
-				75EB3B9919FEA4D3005DBF44 /* Supporting Files */,
+				75197C271A02FF0B000C08F6 /* MyEventsViewController (Front) */,
+				758473C61A0C98C3005C0F32 /* loginViewController */,
+				758473CA1A0C9DC0005C0F32 /* Settings View Controller */,
 			);
 			path = EventFoundry;
 			sourceTree = "<group>";
@@ -217,12 +244,15 @@
 		75EB3B9919FEA4D3005DBF44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				757E1CD41A04209B00CC0168 /* Library */,
+				757E1CD31A041EFC00CC0168 /* Frameworks */,
 				75EB3B9B19FEA4D3005DBF44 /* main.m */,
 				75EB3B9A19FEA4D3005DBF44 /* Info.plist */,
 				75EB3BA819FEA4D3005DBF44 /* LaunchScreen.xib */,
 				757E1CD51A0427D500CC0168 /* Resources */,
 			);
 			name = "Supporting Files";
+			path = EventFoundry;
 			sourceTree = "<group>";
 		};
 		75EB3BB219FEA4D3005DBF44 /* EventFoundryTests */ = {
@@ -351,8 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758473C91A0C98F7005C0F32 /* LoginViewController.m in Sources */,
 				75197C2F1A03012A000C08F6 /* SWRevealViewController.m in Sources */,
 				75EB3BA219FEA4D3005DBF44 /* DiscoveryViewController.m in Sources */,
+				758473CD1A0C9DF1005C0F32 /* SettingsViewController.m in Sources */,
 				75EB3BC619FEA681005DBF44 /* MyTicketsViewController.m in Sources */,
 				75EB3B9F19FEA4D3005DBF44 /* AppDelegate.m in Sources */,
 				75EB3B9C19FEA4D3005DBF44 /* main.m in Sources */,
@@ -386,6 +418,7 @@
 				75EB3BA419FEA4D3005DBF44 /* Base */,
 			);
 			name = Main.storyboard;
+			path = EventFoundry;
 			sourceTree = "<group>";
 		};
 		75EB3BA819FEA4D3005DBF44 /* LaunchScreen.xib */ = {

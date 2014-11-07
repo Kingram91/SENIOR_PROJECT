@@ -1,19 +1,18 @@
 //
-//  TicketsViewController.m
+//  SettingsViewController.m
 //  EventFoundry
 //
-//  Created by Kquane Ingram on 10/27/14.
+//  Created by Kquane Ingram on 11/7/14.
 //  Copyright (c) 2014 KING. All rights reserved.
 //
 
-#import "MyTicketsViewController.h"
+#import "SettingsViewController.h"
 #import "SWRevealViewController.h"
-
-@interface MyTicketsViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation MyTicketsViewController
+@implementation SettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
