@@ -15,5 +15,6 @@
     <string name="search_hint">What are you looking for?</string>
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_setting">SettingActivity</string>
 
 </resources>

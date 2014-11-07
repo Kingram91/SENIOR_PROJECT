@@ -51,6 +51,6 @@ Global
 		{F19D77D9-948F-4171-8341-8D5402FD1A4B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = EventFoundryAndroid\EventFoundryAndroid.csproj
+		StartupItem = EventFoundryiOS\EventFoundryiOS.csproj
 	EndGlobalSection
 EndGlobal
