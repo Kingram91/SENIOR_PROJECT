@@ -13,5 +13,8 @@
     <header
         android:fragment="com.seniorproject.eventfoundry.eventfoundry.SettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync" />
+    <header
+        android:fragment="com.seniorproject.eventfoundry.eventfoundry.SettingsActivity$AboutPreferenceFragment"
+        android:title="About" />
 
 </preference-headers>

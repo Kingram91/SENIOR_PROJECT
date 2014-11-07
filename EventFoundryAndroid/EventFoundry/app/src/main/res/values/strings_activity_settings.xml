@@ -56,4 +56,23 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="pref_header_about">About</string>
+    <string-array name="pref_about_rate_value_titles">
+        <item>1 Star</item>
+        <item>2 Stars</item>
+        <item>3 Stars</item>
+        <item>4 Stars</item>
+        <item>5 Stars</item>
+    </string-array>
+    <string-array name="pref_about_rate_value_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="pref_title_about_rate_us">Rate us</string>
+    <string name="pref_title_about_legal">Legal</string>
+    <string name="pref_title_about_help">Help</string>
 </resources>

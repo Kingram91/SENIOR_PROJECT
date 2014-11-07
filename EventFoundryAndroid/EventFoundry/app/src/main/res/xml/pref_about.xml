@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="@string/pref_title_about_rate_us"
+        android:key="about_rate_us"
+        android:entries="@array/pref_about_rate_value_titles"
+        android:entryValues="@array/pref_about_rate_value_values">
+    </ListPreference>
+    <Preference android:title="@string/pref_title_about_legal">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+    <Preference android:title="@string/pref_title_about_help">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+</PreferenceScreen>
