@@ -10,31 +10,55 @@
 	<string>EventFoundry</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>913F5C2C6D14A4818F0BBD120045B909CC2EB190</key>
-		<string>https://github.com/Kingram91/SENIOR_PROJECT.git</string>
+		<key>59D5F048F5C587ED2E696EBB04FE176420D5FB74</key>
+		<string>https://github.com:443/Kingram91/SENIOR_PROJECT.git</string>
+		<key>BF365CA0A6C3F2966A39825A3393D74B84715994</key>
+		<string>https://github.com:443/Kingram91/SENIOR_PROJECT.git</string>
+		<key>E3970A3288379D363B32E5D626764212CB3A84DD</key>
+		<string>https://github.com/abatres/InstructionRepository.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SENIOR_PROJECT-master/EventFoundry/EventFoundry.xcodeproj</string>
+	<string>EventFoundryiOS/EventFoundry.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>913F5C2C6D14A4818F0BBD120045B909CC2EB190</key>
+		<key>59D5F048F5C587ED2E696EBB04FE176420D5FB74</key>
+		<string>../../..</string>
+		<key>BF365CA0A6C3F2966A39825A3393D74B84715994</key>
+		<string>../../../../Events-Foundry</string>
+		<key>E3970A3288379D363B32E5D626764212CB3A84DD</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Kingram91/SENIOR_PROJECT.git</string>
+	<string>https://github.com:443/Kingram91/SENIOR_PROJECT.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>913F5C2C6D14A4818F0BBD120045B909CC2EB190</string>
+	<string>59D5F048F5C587ED2E696EBB04FE176420D5FB74</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>913F5C2C6D14A4818F0BBD120045B909CC2EB190</string>
+			<string>E3970A3288379D363B32E5D626764212CB3A84DD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Projects</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59D5F048F5C587ED2E696EBB04FE176420D5FB74</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EventFoundry</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF365CA0A6C3F2966A39825A3393D74B84715994</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Events-Foundry</string>
 		</dict>
 	</array>
 </dict>

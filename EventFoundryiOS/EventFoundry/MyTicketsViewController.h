@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MyTicketsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

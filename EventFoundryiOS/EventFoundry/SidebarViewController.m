@@ -11,6 +11,7 @@
 #import "SWRevealViewController.h"
 #import "DiscoveryViewController.h"
 #import "MyEventsViewController.h"
+#import "MyTicketsViewController.h"
 
 @interface SidebarViewController()
 
@@ -36,7 +37,7 @@
 {
     [super viewDidLoad];
     
-    menuItems = @[@"title", @"Discover", @"My Tickets", @"My Events", @"Log In", @"Settings"];
+    menuItems = @[@"title", @"discover", @"myTickets", @"myEvents", @"login or Signup", @"settings"];
 }
 
 -(void)didReceiveMemoryWarning{
@@ -71,12 +72,23 @@
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
     
-    // Set the photo if it navigates to the PhotoView
-    if ([segue.identifier isEqualToString:@"showPhoto"]) {
-        PhotoViewController *photoController = (PhotoViewController*)segue.destinationViewController;
-        NSString *photoFilename = [NSString stringWithFormat:@"%@_photo.jpg", [menuItems objectAtIndex:indexPath.row]];
-        photoController.photoFilename = photoFilename;
+    // load the My Tickets View Controller if it navigates to the myTicketsViewController
+    if ([segue.identifier isEqualToString:@"tickets"]) {
+        
+        //Load from Database
+        
+        MyTicketsViewController *ticketsViewController = (MyTicketsViewController*)segue.destinationViewController;
     }
+    else if ([segue.identifier isEqualToString:@"myeventsSegue"]){
+        //Load from Database User Saved Events
+        
+    }else if ([segue.identifier isEqualToString:@"settingsSegue"]){
+        //Load settings ??        
+    }else if ([segue.identifier isEqualToString:@"loginSegue"]){
+        //Do something with the login information
+        
+    }
+    
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;

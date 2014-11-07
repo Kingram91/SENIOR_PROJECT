@@ -7,6 +7,7 @@ import android.annotation.TargetApi;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
 import android.content.CursorLoader;
+import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -63,6 +64,8 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     private View mSignOutButtons;
     private View mLoginFormView;
 
+    private EditText fullnameEditText, emailEditText, passwordEditText, homwediEditText, zipcodeEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +110,8 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             @Override
             public void onClick(View view) {
                 attemptLogin();
+
+                registerLogin();
             }
         });
 
@@ -182,6 +187,32 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         //TODO: Replace this with your own logic
         return password.length() > 4;
     }
+
+
+    /*
+      Login is not successful, end user attempts to register
+     */
+
+    public void registerLogin()
+    {
+      //display
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
+
+        //
+        EditImplementation();
+    }
+
+    public void EditImplementation()
+    {
+        fullnameEditText = (EditText) findViewById(R.id.fullnameEdit);
+        emailEditText = (EditText) findViewById(R.id.emailEdit);
+        passwordEditText = (EditText) findViewById(R.id.passwordEdit);
+        homwediEditText = (EditText) findViewById(R.id.homeEditText);
+        zipcodeEditText = (EditText) findViewById(R.id.zipCodeEditText);
+    }
+
+
 
     /**
      * Shows the progress UI and hides the login form.

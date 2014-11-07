@@ -1,19 +1,19 @@
 //
-//  TicketsViewController.m
+//  LoginViewController.m
 //  EventFoundry
 //
-//  Created by Kquane Ingram on 10/27/14.
+//  Created by Kquane Ingram on 11/7/14.
 //  Copyright (c) 2014 KING. All rights reserved.
 //
 
-#import "MyTicketsViewController.h"
+#import "LoginViewController.h"
 #import "SWRevealViewController.h"
 
-@interface MyTicketsViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation MyTicketsViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

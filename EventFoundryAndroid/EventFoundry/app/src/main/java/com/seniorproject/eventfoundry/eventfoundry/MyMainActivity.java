@@ -70,15 +70,6 @@ public class MyMainActivity extends Activity
                 //Saved Events
                 mTitle = getString(R.string.title_savedevents);
                 break;
-            case 4:
-                //register
-                intent = new Intent(this, RegistrationActivity.class);
-                startActivity(intent);
-
-            case 5:
-                //register
-                intent = new Intent(this, SettingActivity.class);
-                startActivity(intent);
         }
     }
 
@@ -96,11 +87,6 @@ public class MyMainActivity extends Activity
             case 4://Saved Events option
                 mTitle = getString(R.string.title_savedevents);
                 break;
-            case 5: //register option
-                mTitle = "Register";
-
-            case 6: //Setting option
-                mTitle = "Setting";
         }
     }
 

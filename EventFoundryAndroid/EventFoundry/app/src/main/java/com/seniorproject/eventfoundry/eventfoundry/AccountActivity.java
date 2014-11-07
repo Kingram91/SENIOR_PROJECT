@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-public class SettingActivity extends Activity {
+public class AccountActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
