@@ -11,7 +11,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
         android:id="@+id/linearLayout">
 
         <LinearLayout
@@ -19,7 +18,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
             android:id="@+id/horizontal1">
 
             <Button
@@ -36,12 +34,29 @@
 
         </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/horizontal1_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/accounttitleTextView"
+            android:text="View and edit the basic of your account"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="95dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginBottom="-50dp"
             android:weightSum="50"
             android:id="@+id/horizontal2">
@@ -57,7 +72,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit"
+                android:text="Email"
                 android:id="@+id/emailEditbutton"
                 android:layout_weight="1" />
 
@@ -81,7 +96,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit"
+                android:text="Phone"
                 android:id="@+id/Phonebutton" />
         </LinearLayout>
 
@@ -128,6 +143,32 @@
                 android:text="New Password"
                 android:id="@+id/button2" />
         </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:id="@+id/horizontal6_b">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Gen_Information_Title"
+            android:text="Access to your event information"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Gen_Information_TextView"
+            android:text="To be eligible, end-users need to be: \n
+             18 or older \n Registered on Event Foundry" />
+
+    </LinearLayout>
+
 
         <LinearLayout
             android:orientation="horizontal"
