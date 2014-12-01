@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -33,6 +34,7 @@ public class MyMainActivity extends Activity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    private String titleBar[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,41 +55,50 @@ public class MyMainActivity extends Activity
         // update the main content by replacing fragments
         Intent intent;
         Fragment fragment = null;
-        FragmentManager fragmentManager = getFragmentManager();
         switch (position) {
             case 0:
                 //Sign in
-                 intent = new Intent(this, LoginActivity.class);
+                intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 break;
             case 1:
 
                 //Disc over
+                mTitle = getString(R.string.title_discover);
                 fragment = new EventFragment();
-                fragmentManager.beginTransaction().replace(R.id.event_list, fragment).commit();
                 break;
             case 2:
                 //Mytickets
+                mTitle = getString(R.string.title_mytickets);
                 break;
             case 3:
                 //Saved Events
+                mTitle = getString(R.string.title_savedevents);
                 break;
+        }
+        if (fragment != null) {
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+
+        } else {
+            // error in creating fragment
+            Log.e("MainActivity", "Error in creating fragment");
         }
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1://sign in option
-                mTitle = getString(R.string.title_signin);
+                //mTitle = getString(R.string.title_signin);
                 break;
             case 2: //discover option
-                mTitle = getString(R.string.title_discover);
+               // mTitle = getString(R.string.title_discover);
                 break;
             case 3://My tickets option
-                mTitle = getString(R.string.title_mytickets);
+               // mTitle = getString(R.string.title_mytickets);
                 break;
             case 4://Saved Events option
-                mTitle = getString(R.string.title_savedevents);
+               // mTitle = getString(R.string.title_savedevents);
                 break;
         }
     }
