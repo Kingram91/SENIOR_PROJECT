@@ -51,24 +51,26 @@ public class MyMainActivity extends Activity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
+        Intent intent;
+        Fragment fragment = null;
         FragmentManager fragmentManager = getFragmentManager();
         switch (position) {
             case 0:
                 //Sign in
-                Intent intent = new Intent(this, LoginActivity.class);
+                 intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 break;
             case 1:
-                //Discover
-                mTitle = getString(R.string.title_discover);
+
+                //Disc over
+                fragment = new EventFragment();
+                fragmentManager.beginTransaction().replace(R.id.event_list, fragment).commit();
                 break;
             case 2:
                 //Mytickets
-                mTitle = getString(R.string.title_mytickets);
                 break;
             case 3:
                 //Saved Events
-                mTitle = getString(R.string.title_savedevents);
                 break;
         }
     }
@@ -92,7 +94,6 @@ public class MyMainActivity extends Activity
 
     public void restoreActionBar() {
         ActionBar actionBar = getActionBar();
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
     }

@@ -78,7 +78,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         // Select either the default item (0) or the last selected item.
         //default item is set to 1(Discover)
-        selectItem(1);
+        selectItem(0);
     }
 
     @Override
