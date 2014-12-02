@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.seniorproject.eventfoundry.eventfoundry" > <!-- SDK min version -->
+
     <uses-sdk
         android:maxSdkVersion="21"
-        android:minSdkVersion="17" />
+        android:minSdkVersion="8" />
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -40,6 +41,15 @@
         <activity
             android:name="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity"
             android:label="@string/app_name" >
+            android:label="@string/title_about" >
+            android:label="@string/title_about"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity">
+
+             </meta-data>
+
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
                 <action android:name="android.intent.action.MAIN" />
@@ -63,6 +73,31 @@
                 android:value=".MyMainActivity" />
         </activity>
 
+        <activity
+            android:name="com.seniorproject.eventfoundry.eventfoundry.Shedule"
+            android:label="@string/title_savedevents"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyMainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.seniorproject.eventfoundry.eventfoundry.About"
+            android:label="@string/title_about"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyMainActivity" />
+        </activity>
+
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -79,7 +114,13 @@
         <activity
             android:name="com.seniorproject.eventfoundry.eventfoundry.RegistrationActivity"
             android:label="@string/title_activity_registration" >
+            android:label="@string/title_activity_registration"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
         </activity>
+
         <activity
             android:name="com.seniorproject.eventfoundry.eventfoundry.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -87,17 +128,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
-            android:name="com.seniorproject.eventfoundry.eventfoundry.SettingActivity"
-            android:label="@string/title_activity_setting" >
         </activity>
-        <activity
-            android:name="com.seniorproject.eventfoundry.eventfoundry.SavedList"
-            android:label="@string/title_activity_view" >
-        </activity>
-        <activity
-            android:name="com.seniorproject.eventfoundry.eventfoundry.SingleListItem"
-            android:label="@string/title_activity_single_list_item" >
-        </activity>
+
+        <activity android:name="com.seniorproject.eventfoundry.eventfoundry.frag4"
+            android:label="Event List"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
+            </activity>
+
+
     </application>
 
 </manifest>

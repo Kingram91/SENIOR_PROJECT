@@ -5,12 +5,11 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.ListActivity;
+
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,10 +19,9 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.Button;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 public class MyMainActivity extends Activity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, carFragment.OnFragmentInteractionListener {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -48,6 +46,15 @@ public class MyMainActivity extends Activity
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        Button button = (Button) findViewById(R.id.button7);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                setContentView(R.layout.list_item);
+            }
+        });
+
     }
 
     @Override
@@ -55,6 +62,7 @@ public class MyMainActivity extends Activity
         // update the main content by replacing fragments
         Intent intent;
         Fragment fragment = null;
+        FragmentManager fragmentManager = getFragmentManager();
         switch (position) {
             case 0:
                 //Sign in
@@ -63,55 +71,45 @@ public class MyMainActivity extends Activity
                 break;
             case 1:
 
-                //Disc over
-                mTitle = getString(R.string.title_discover);
-                //fragment = new EventFragment();
+                //Discover
+                mTitle = getString(R.string.title_savedevents);
+//                fragment = new carFragment();
+//                fragmentManager.beginTransaction().replace(R.id.container,fragment).commit();
                 break;
             case 2:
                 //Mytickets
-                mTitle = getString(R.string.title_mytickets);
+                //mTitle = getString(R.string.title_mytickets);
                 break;
             case 3:
                 //Saved Events
                 mTitle = getString(R.string.title_savedevents);
-                setContentView(R.layout.list_item);
 
-                Button button = (Button) findViewById(R.id.button3);
-                button.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View view) {
+                intent = new Intent(this, Shedule.class);
+                startActivity(intent);
 
-                        setContentView(R.layout.single_list_item);
-                    }
-                });
                 break;
 
             case 4:
                 mTitle = getString(R.string.title_about);
-                setContentView(R.layout.about);
-        }
-        if (fragment != null) {
-            FragmentManager fragmentManager = getFragmentManager();
-            //fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+                intent = new Intent(this, About.class);
+                startActivity(intent);
 
-        } else {
-            // error in creating fragment
-            Log.e("MainActivity", "Error in creating fragment");
         }
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1://sign in option
-                //mTitle = getString(R.string.title_signin);
+                mTitle = getString(R.string.title_signin);
                 break;
             case 2: //discover option
-               // mTitle = getString(R.string.title_discover);
+                mTitle = getString(R.string.title_discover);
                 break;
             case 3://My tickets option
-               // mTitle = getString(R.string.title_mytickets);
+                mTitle = getString(R.string.title_mytickets);
                 break;
             case 4://Saved Events option
-               // mTitle = getString(R.string.title_savedevents);
+               mTitle = getString(R.string.title_savedevents);
                 break;
         }
     }
@@ -162,7 +160,13 @@ public class MyMainActivity extends Activity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(String id) {
+
     }
 
     /**

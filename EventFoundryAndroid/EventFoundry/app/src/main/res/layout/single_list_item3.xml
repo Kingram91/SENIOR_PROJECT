@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+
+   <!-- <TextView android:id="@+id/product_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:padding="10dip"
+        android:textColor="#ffffff"/> -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageView4"
+            android:background="@drawable/b2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modern Web Design Strategies December 14th, 2014 2:00 pm - 4:00pm Alfaratta, GA"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.62">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Information. Please fill out the form below."
+            android:id="@+id/textView2" />
+
+        <!-- Full Name Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Full Name"
+            android:id="@+id/fullnameLabel2"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullnameEdit2"
+            android:editable="true"
+            android:singleLine = "true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"/>
+
+        <!--  Email Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Email"
+            android:textColor="#372c24"
+            android:id="@+id/emailLabel2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailEdit2"
+            android:editable="true"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:layout_marginBottom="20dip"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/button6"
+            android:gravity="center|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,31 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffeeffec">
 
     <!--  Single List Item Design -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="63dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton" />
 
-        <Button
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Data Encrypt &amp; Decrypt "
-            android:id="@+id/button3"
-            android:layout_gravity="right" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Upcoming Events"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:textSize="35dp" />
 
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:id="@+id/imageView"
-            android:background="@drawable/b1"
-            android:maxHeight="35dp"
-            android:maxWidth="35dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:text="Data Encrypt &amp; Decrypt "
+                android:id="@+id/button3"
+                android:layout_gravity="right" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/b1"
+                android:maxHeight="35dp"
+                android:maxWidth="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:text="Web Design "
+                android:id="@+id/button4"
+                android:layout_gravity="right" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView2"
+                android:background="@drawable/b5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:text="Modern Web Design Strategies"
+                android:id="@+id/button5" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/b2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="All Events"
+            android:id="@+id/textView7"
+            android:textStyle="bold"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:id="@+id/button11" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  On Campus"
+                android:id="@+id/button15" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Technology"
+                android:id="@+id/button19" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holiday"
+                android:id="@+id/button20" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Museum"
+                android:id="@+id/button21" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales"
+                android:id="@+id/button22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conferences  "
+                android:id="@+id/button24" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concerts"
+                android:id="@+id/button23" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Education"
+                android:id="@+id/button25" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/shakira" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/billcosby" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:background="@drawable/harlem" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton5"
+            android:background="@drawable/johnol" />
+
     </LinearLayout>
 
- <!--   <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--   <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/label"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -33,43 +216,6 @@
         android:textSize="16dip"
         android:textStyle="bold" >
     </TextView>  -->
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Web Design "
-            android:id="@+id/button4"
-            android:layout_gravity="right"/>
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:id="@+id/imageView2"
-            android:background="@drawable/b5" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Modern Web Design Strategies"
-            android:id="@+id/button5" />
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:id="@+id/imageView3"
-            android:background="@drawable/b2" />
-    </LinearLayout>
 
 
 </LinearLayout>
