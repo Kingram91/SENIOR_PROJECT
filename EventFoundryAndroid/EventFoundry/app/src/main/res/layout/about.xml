@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="About"
+            android:id="@+id/textView3"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="434dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The Event-Foundry Software program is a Web-Based Event planning and management application. The application will be made available on mobile devices via a native app or through our Web portal. The application will allow participants to make, reserve, share, and receive invitations.
+ Users can confirm or deny Event-Foundry invitations as well as use CR Readers at the events to show proof of purchase/invitation.
+
+We believe that gathering with others helps to learn, feel connected and celebrate. So, this tool facilitates people find and attend events that feed their interests while connecting them with others who share their passions.We are here to bring people together and make you happy!!
+"
+            android:id="@+id/textView4"
+            android:layout_weight="1.97" />
+    </LinearLayout>
+</LinearLayout>

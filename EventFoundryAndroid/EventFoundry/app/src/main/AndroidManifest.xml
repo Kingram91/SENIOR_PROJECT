@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-    package="com.seniorproject.eventfoundry.eventfoundry" >
-
-    <!-- To access Google+ APIs: -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- SDK min version -->
-    <uses-sdk android:minSdkVersion="8"
-        android:maxSdkVersion="21"/>
-
-
     package="com.seniorproject.eventfoundry.eventfoundry" > <!-- SDK min version -->
+    <uses-sdk
+        android:maxSdkVersion="21"
+        android:minSdkVersion="17" />
+
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
-
+    package="com.seniorproject.eventfoundry.eventfoundry" > 
+    <!-- SDK min version -->
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
 >>>>>>> origin/master
     <!--
          To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
@@ -29,12 +25,11 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <!--Access location-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- Access location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <application
@@ -43,12 +38,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyMainActivity"
+            android:name="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"></action>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
@@ -56,9 +52,9 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.seniorproject.eventfoundry.eventfoundry.LoginActivity"
             android:label="@string/title_activity_login"
-            android:parentActivityName=".MyMainActivity"
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -72,7 +68,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".SearchResultsActivity"
+            android:name="com.seniorproject.eventfoundry.eventfoundry.SearchResultsActivity"
             android:label="@string/title_activity_search_results" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -81,18 +77,26 @@
 
         <!-- Entry for RegisterActivity.class -->
         <activity
-            android:name=".RegistrationActivity"
+            android:name="com.seniorproject.eventfoundry.eventfoundry.RegistrationActivity"
             android:label="@string/title_activity_registration" >
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.seniorproject.eventfoundry.eventfoundry.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MyMainActivity" >
+            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
             android:name="com.seniorproject.eventfoundry.eventfoundry.SettingActivity"
             android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.seniorproject.eventfoundry.eventfoundry.SavedList"
+            android:label="@string/title_activity_view" >
+        </activity>
+        <activity
+            android:name="com.seniorproject.eventfoundry.eventfoundry.SingleListItem"
+            android:label="@string/title_activity_single_list_item" >
         </activity>
     </application>
 

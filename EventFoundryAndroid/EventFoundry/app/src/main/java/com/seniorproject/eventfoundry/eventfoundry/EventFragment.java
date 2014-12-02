@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Created by James.Kimani on 11/30/2014.
  */
-
+/*
 public class EventFragment extends Fragment {
     private List<Car> myCars = new ArrayList<Car>();
     public EventFragment(){}
@@ -27,13 +27,13 @@ public class EventFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_eventlist, container, false);
-       /* populateCarList();
+        populateCarList();
         populateListView();
         registerClickCallback();
-*/
+
         return rootView;
     }
-    /*
+
     private void populateCarList() {
         myCars.add(new Car("Ford", 1940, R.drawable.help, "Needing work"));
         myCars.add(new Car("Toyota", 1994, R.drawable.heart, "Lovable"));
@@ -100,5 +100,6 @@ public class EventFragment extends Fragment {
             return itemView;
         }
     }
-*/
+
 }
+*/

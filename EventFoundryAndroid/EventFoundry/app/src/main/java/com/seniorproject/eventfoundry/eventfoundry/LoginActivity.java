@@ -279,9 +279,9 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         //TODO: Update this logic to also handle the user logged in by email.
         boolean connected = getPlusClient().isConnected();
 
-        mSignOutButtons.setVisibility(connected ? View.VISIBLE : View.GONE);
-        mPlusSignInButton.setVisibility(connected ? View.GONE : View.VISIBLE);
-        mEmailLoginFormView.setVisibility(connected ? View.GONE : View.VISIBLE);
+//        mSignOutButtons.setVisibility(connected ? View.VISIBLE : View.GONE);
+//        mPlusSignInButton.setVisibility(connected ? View.GONE : View.VISIBLE);
+//          mEmailLoginFormView.setVisibility(connected ? View.GONE : View.VISIBLE);
     }
 
     @Override
