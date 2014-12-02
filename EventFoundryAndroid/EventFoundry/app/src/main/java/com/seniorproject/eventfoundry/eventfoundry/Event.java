@@ -4,80 +4,88 @@ package com.seniorproject.eventfoundry.eventfoundry;
  * Created by James.Kimani on 11/30/2014.
  */
 public class Event {
-    private String name;
-    private String Date;
-    private String Description;
-    private String Location;
-    private Double price;
-    private String Host;
-    private int iconID;
+    public String eventID;
+    public String name;
+    public String date;
+    public String description;
+    public String location;
+    public String price;
+    public String host;
+    public int iconID;
 
-    public int getIconID() {
-        return iconID;
-    }
-
-    public void setIconID(int iconID) {
-        this.iconID = iconID;
-    }
-
-
-
-    public String getName() {
-        return name;
+    public void setEventID(String eventID) {
+        this.eventID = eventID;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getDate() {
-        return Date;
-    }
-
     public void setDate(String date) {
-        Date = date;
-    }
-
-    public String getDescription() {
-        return Description;
+        this.date = date;
     }
 
     public void setDescription(String description) {
-        Description = description;
-    }
-
-    public String getLocation() {
-        return Location;
+        this.description = description;
     }
 
     public void setLocation(String location) {
-        Location = location;
+        this.location = location;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double  price) {
+    public void setPrice(String price) {
         this.price = price;
-    }
-
-    public String getHost() {
-        return Host;
     }
 
     public void setHost(String host) {
-        Host = host;
+        this.host = host;
     }
 
-    public Event(String name, String date, String description, String location, Double price, String host, int iconID) {
-        super();
-        this.name = name;
-        this.Date = date;
-        this.Description = description;
-        this.Location = location;
-        this.price = price;
-        this.Host = host;
+    public void setIconID(int iconID) {
         this.iconID = iconID;
     }
+
+    public Event(String eventID, String name, String date, String description, String location, String price, String host, int iconID) {
+        this.eventID = eventID;
+        this.name = name;
+        this.date = date;
+        this.description = description;
+        this.location = location;
+        this.price = price;
+        this.host = host;
+        this.iconID = iconID;
+    }
+
+    public String getEventID() {
+        return eventID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getHost() {
+        return host;
+    }
+
+    public int getIconID() {
+        return iconID;
+    }
+
 }

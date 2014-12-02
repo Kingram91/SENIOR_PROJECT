@@ -2,11 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/frame">
 
     <ImageView
         android:id="@+id/item_icon"
@@ -18,36 +13,32 @@
         android:maxHeight="80dp"
         android:maxWidth="80dp"
         android:src="@drawable/bug" />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true">
 
-            <TextView
-                android:id="@+id/item_txtCondition"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/item_txtYear"
-                android:layout_alignParentRight="true"
-                android:text="Condition shown here"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/item_txtCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_txtYear"
+        android:layout_alignParentRight="true"
+        android:text="Condition shown here"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-            <TextView
-                android:id="@+id/item_txtYear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/item_txtMake"
-                android:layout_marginBottom="16dp"
-                android:text="2000" />
+    <TextView
+        android:id="@+id/item_txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_icon"
+        android:layout_alignLeft="@+id/item_txtMake"
+        android:layout_marginBottom="16dp"
+        android:text="2000" />
 
-            <TextView
-                android:id="@+id/item_txtMake"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/item_txtCondition"
-                android:text="Make Shown Here"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-        </RelativeLayout>
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/item_txtMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_txtCondition"
+        android:layout_toRightOf="@+id/item_icon"
+        android:text="Make Shown Here"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

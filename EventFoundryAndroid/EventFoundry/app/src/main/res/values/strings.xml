@@ -16,5 +16,27 @@
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_setting">SettingActivity</string>
+    <string-array name="eventNames">
+        <item>Poker Night</item>
+    </string-array>
+    <string-array name="eventDates">
+        <item>11/06/2014 @ 10:00 a.m</item>
+    </string-array>
+    <string-array name="eventDescription">
+        <item>Come out and Dance</item>
+    </string-array>
+    <string-array name="eventLocation">
+        <item>Bellagio</item>
+    </string-array>
+    <string-array name="eventPrice">
+        <item>$ 26.50</item>
+    </string-array>
+    <string-array name="eventHost">
+        <item>Take Over Djs</item>
+    </string-array>
+    <array name="icons">
+        <item>@drawable/ic_action_share</item>
+    </array>
+
 
 </resources>

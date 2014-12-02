@@ -1,106 +1,117 @@
 package com.seniorproject.eventfoundry.eventfoundry;
 
-import android.app.Fragment;
+/**
+ * Created by James.Kimani on 12/2/2014.
+ */
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.ListFragment;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 
-import java.util.ArrayList;
-import java.util.List;
+public class EventFragment extends ListFragment implements OnItemClickListener {
 
-/**
- * Created by James.Kimani on 11/30/2014.
+    String[] names;
+    String[] dates;
+    String[] descriptions;
+    String[] locations;
+    String[] prices;
+    String[] hosts;
+    TypedArray icons;
 
+    EventAdapter adapter;
+    private List<Event> eventItems;
 
-public class EventFragment extends ListFragment {
-    private List<Car> myCars = new ArrayList<Car>();
-    public EventFragment(){}
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        names = getResources().getStringArray(R.array.eventNames);
+        dates = getResources().getStringArray(R.array.eventDates);
+        icons = getResources().obtainTypedArray(R.array.icons);
+        descriptions = getResources().getStringArray(R.array.eventDescription);
+        locations = getResources().getStringArray(R.array.eventLocation);
+        prices = getResources().getStringArray(R.array.eventPrice);
+        hosts = getResources().getStringArray(R.array.eventHost);
+
+        eventItems = new ArrayList<Event>();
+
+        for (int i = 0; i < names.length; i++) {
+            Event items = new Event(""+i, names[i], dates[i], descriptions[i], locations[i], prices[i], hosts[i], icons.getResourceId(i, -1));
+
+            eventItems.add(items);
+        }
+
+        adapter = new EventAdapter(getActivity(), eventItems);
+        setListAdapter(adapter);
+        getListView().setOnItemClickListener(this);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_eventlist, container, false);
-        populateCarList();
-        populateListView();
-        registerClickCallback();
-
-        return rootView;
+        return inflater.inflate(R.layout.eventlist_fragment, null, false);
     }
+/**
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
 
-    private void populateCarList() {
-        myCars.add(new Car("Ford", 1940, R.drawable.help, "Needing work"));
-        myCars.add(new Car("Toyota", 1994, R.drawable.heart, "Lovable"));
-        myCars.add(new Car("Honda", 1999, R.drawable.fish, "Wet"));
-        myCars.add(new Car("Porche", 2005, R.drawable.lightning, "Fast!"));
-        myCars.add(new Car("Jeep", 200, R.drawable.star, "Awesome"));
-        myCars.add(new Car("Rust-Bucket", 2010, R.drawable.bug, "Not *very* good"));
-        myCars.add(new Car("Moon Lander", 1971, R.drawable.up, "Out of this world"));
-    }
+        super.onActivityCreated(savedInstanceState);
 
-    private void populateListView() {
-        ArrayAdapter<Car> adapter = new MyListAdapter();
-        ListView list = (ListView) findViewById(R.id.event_list);
-        list.setAdapter(adapter);
-    }
+        names = getResources().getStringArray(R.array.eventNames);
+        dates = getResources().getStringArray(R.array.eventDates);
+        icons = getResources().obtainTypedArray(R.array.icons);
+        descriptions = getResources().getStringArray(R.array.eventDescription);
+        locations = getResources().getStringArray(R.array.eventLocation);
+        prices = getResources().getStringArray(R.array.eventPrice);
+        hosts = getResources().getStringArray(R.array.eventHost);
 
-    private void registerClickCallback() {
-        ListView list = (ListView) findViewById(R.id.carsListView);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View viewClicked,
-                                    int position, long id) {
+        eventItems = new ArrayList<Event>();
 
-                Car clickedCar = myCars.get(position);
-                String message = "You clicked position " + position
-                        + " Which is car make " + clickedCar.getMake();
-                Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
-            }
-        });
-    }
+        for (int i = 0; i < names.length; i++) {
+            Event items = new Event(""+i, names[i], dates[i], descriptions[i], locations[i], prices[i], hosts[i], icons.getResourceId(i, -1));
 
-    private class MyListAdapter extends ArrayAdapter<Car> {
-        public MyListAdapter() {
-            super(getActivity(), R.layout.fragment_eventlist, myCars);
+            eventItems.add(items);
         }
 
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            // Make sure we have a view to work with (may have been given null)
-            View itemView = convertView;
-            if (itemView == null) {
-                itemView = getLayoutInflater().inflate(R.layout.fragment_eventlist, parent, false);
-            }
+        adapter = new EventAdapter(getActivity(), eventItems);
+        setListAdapter(adapter);
+        getListView().setOnItemClickListener(this);
 
-            // Find the car to work with.
-            Car currentCar = myCars.get(position);
+    }
+*/
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position,
+                            long id) {
 
-            // Fill the view
-            ImageView imageView = (ImageView)itemView.findViewById(R.id.item_icon);
-            imageView.setImageResource(currentCar.getIconID());
+        Toast.makeText(getActivity(), names[position], Toast.LENGTH_SHORT)
+                .show();
 
-            // Make:
-            TextView makeText = (TextView) itemView.findViewById(R.id.item_txtMake);
-            makeText.setText(currentCar.getMake());
+    }
 
-            // Year:
-            TextView yearText = (TextView) itemView.findViewById(R.id.item_txtYear);
-            yearText.setText("" + currentCar.getYear());
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        // retrieve theListView item
+        Event event = eventItems.get(position);
 
-            // Condition:
-            TextView condionText = (TextView) itemView.findViewById(R.id.item_txtCondition);
-            condionText.setText(currentCar.getCondition());
+        // do something
+        Toast.makeText(getActivity(), event.getName(), Toast.LENGTH_SHORT).show();
+    }
 
-            return itemView;
-        }
+    public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
+        public void onFragmentInteraction(String id);
     }
 
 }
- */
+
