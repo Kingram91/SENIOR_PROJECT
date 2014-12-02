@@ -17,11 +17,10 @@
     <string name="title_activity_registration">RegistrationActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_setting">SettingActivity</string>
-<<<<<<< HEAD
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_view">ViewActivity</string>
     <string name="title_activity_single_list_item">SingleListItem</string>
-=======
+
     <string-array name="eventNames">
         <item>Poker Night</item>
     </string-array>
@@ -43,7 +42,5 @@
     <array name="icons">
         <item>@drawable/ic_action_share</item>
     </array>
-
->>>>>>> 5912346d4d8c6792171d2f5797d2e04be94f3c6c
 
 </resources>

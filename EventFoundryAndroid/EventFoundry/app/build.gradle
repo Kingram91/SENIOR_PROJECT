@@ -5,13 +5,10 @@ android {
     buildToolsVersion "20.0.0"
     defaultConfig {
         applicationId "com.seniorproject.eventfoundry.eventfoundry"
-<<<<<<< HEAD
-        minSdkVersion 19
-        targetSdkVersion 20
-=======
+
         minSdkVersion 16
         targetSdkVersion 21
->>>>>>> 5912346d4d8c6792171d2f5797d2e04be94f3c6c
+
         versionCode 1
         versionName "1.0"
     }
