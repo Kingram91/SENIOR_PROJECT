@@ -90,14 +90,6 @@
                 android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
         </activity>
 
-        <activity android:name="com.seniorproject.eventfoundry.eventfoundry.frag4"
-            android:label="Event List"
-            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
-            </activity>
-
 
     </application>
 

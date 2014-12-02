@@ -24,7 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.SearchView;
 import android.widget.TextView;
 public class MyMainActivity extends Activity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks, EventFragment.OnFragmentInteractionListener {
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks, carFragment.OnFragmentInteractionListener {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -67,8 +67,7 @@ public class MyMainActivity extends Activity
 
                 //Disc over
                 //mTitle = getString(R.string.title_discover);
-                //fragment = new EventFragment();
-                fragment = new EventFragment();
+                fragment = new carFragment();
                 fragmentManager.beginTransaction().replace(R.id.container,fragment).commit();
                 break;
             case 2:
@@ -78,7 +77,6 @@ public class MyMainActivity extends Activity
             case 3:
                 //Saved Events
                 //mTitle = getString(R.string.title_savedevents);
-                //Intent intent2 = new Intent(this, frag4.class);
                 //startActivity(intent2);
                 break;
         }

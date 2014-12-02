@@ -26,8 +26,10 @@ public class DummyContent {
     static {
         // Add 3 sample items.
         addItem(new EventItem("1","Vegas Night", "11/26/2014 9:00 AM - 10:30 AM", "Come and out and play", "Vegas Strip", 26.00, "Take Over DJs", 1));
-        //addItem(new EventItem("2", "Event 2"));
-        //addItem(new EventItem("3", "Event 3"));
+        //addItem(new EventItem());
+        //addItem(new EventItem());
+
+
     }
 
     private static void addItem(EventItem event) {
