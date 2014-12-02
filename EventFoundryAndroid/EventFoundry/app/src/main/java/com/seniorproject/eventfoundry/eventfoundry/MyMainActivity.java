@@ -85,7 +85,7 @@ public class MyMainActivity extends Activity
                 break;
             case 2:
                 //Mytickets
-                //mTitle = getString(R.string.title_mytickets);
+
                 break;
             case 3:
                 //Saved Events

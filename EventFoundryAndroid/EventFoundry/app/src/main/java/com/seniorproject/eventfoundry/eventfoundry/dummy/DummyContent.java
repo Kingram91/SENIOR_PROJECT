@@ -25,9 +25,22 @@ public class DummyContent {
 
     static {
         // Add 3 sample items.
-        addItem(new EventItem("1","Vegas Night", "11/26/2014 9:00 AM - 10:30 AM", "Come and out and play", "Vegas Strip", 26.00, "Take Over DJs", 1));
-        //addItem(new EventItem());
-        //addItem(new EventItem());
+        addItem(new EventItem("1","Music"));
+        addItem(new EventItem("2","Business"));
+        addItem(new EventItem("3","Food & Drink"));
+        addItem(new EventItem("4","Community"));
+        addItem(new EventItem("5","Arts"));
+        addItem(new EventItem("6","Film and Media"));
+        addItem(new EventItem("7","Sports and Fitness"));
+        addItem(new EventItem("8","Health"));
+        addItem(new EventItem("9","Science and Tech"));
+        addItem(new EventItem("10","Holiday"));
+        addItem(new EventItem("11","Fashion"));
+        addItem(new EventItem("12","Home and Lifestyle"));
+        addItem(new EventItem("13","Auto, Boat & Air"));
+        addItem(new EventItem("14","Hobbies"));
+        addItem(new EventItem("15","Family and Education"));
+
 
 
     }
@@ -43,25 +56,9 @@ public class DummyContent {
     public static class EventItem {
         public String eventID;
         public String name;
-        public String date;
-        public String description;
-        public String location;
-        public Double price;
-        public String host;
-        public int iconID;
 
-        public EventItem(String eventID, String name, String date, String description, String location, Double price,
-                         String host, int iconID) {
-            this.eventID = eventID;
-            this.name = name;
-            this.date = date;
-            this.description = description;
-            this.location = location;
-            this.price = price;
-            this.host = host;
-            this.iconID = iconID;
-        }
-        public String geteventID(){
+
+        public String getEventID() {
             return eventID;
         }
 
@@ -69,33 +66,14 @@ public class DummyContent {
             return name;
         }
 
-        public String getDate() {
-            return date;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-
-        public String getLocation() {
-            return location;
-        }
-
-        public Double getPrice() {
-            return price;
-        }
-
-        public String getHost() {
-            return host;
-        }
-
-        public int getIconID() {
-            return iconID;
+        public EventItem(String eventID, String name) {
+            this.eventID = eventID;
+            this.name = name;
         }
 
         @Override
         public String toString() {
-            return name +"\n"+location+"\n"+date+"\n"+"$"+price;
+            return name;
         }
     }
 }
