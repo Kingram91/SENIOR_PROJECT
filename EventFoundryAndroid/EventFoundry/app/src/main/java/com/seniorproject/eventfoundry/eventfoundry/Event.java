@@ -1,3 +1,5 @@
+package com.seniorproject.eventfoundry.eventfoundry;
+
 /**
  * Created by James.Kimani on 11/30/2014.
  */

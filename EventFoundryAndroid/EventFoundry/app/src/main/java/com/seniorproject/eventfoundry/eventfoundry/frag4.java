@@ -1,9 +1,11 @@
 package com.seniorproject.eventfoundry.eventfoundry;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
 import android.app.Fragment;
-import android.app.ListFragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -13,28 +15,21 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * Created by James.Kimani on 11/30/2014.
-
-
-public class EventFragment extends ListFragment {
+ * Created by James.Kimani on 12/1/2014.
+ */
+public class frag4 extends Activity {
     private List<Car> myCars = new ArrayList<Car>();
-    public EventFragment(){}
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_eventlist, container, false);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment4);
+
         populateCarList();
         populateListView();
         registerClickCallback();
-
-        return rootView;
     }
-
     private void populateCarList() {
         myCars.add(new Car("Ford", 1940, R.drawable.help, "Needing work"));
         myCars.add(new Car("Toyota", 1994, R.drawable.heart, "Lovable"));
@@ -47,7 +42,7 @@ public class EventFragment extends ListFragment {
 
     private void populateListView() {
         ArrayAdapter<Car> adapter = new MyListAdapter();
-        ListView list = (ListView) findViewById(R.id.event_list);
+        ListView list = (ListView) findViewById(R.id.carsListView);
         list.setAdapter(adapter);
     }
 
@@ -61,14 +56,14 @@ public class EventFragment extends ListFragment {
                 Car clickedCar = myCars.get(position);
                 String message = "You clicked position " + position
                         + " Which is car make " + clickedCar.getMake();
-                Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
+                Toast.makeText(frag4.this, message, Toast.LENGTH_LONG).show();
             }
         });
     }
 
     private class MyListAdapter extends ArrayAdapter<Car> {
         public MyListAdapter() {
-            super(getActivity(), R.layout.fragment_eventlist, myCars);
+            super(frag4.this, R.layout.item_view, myCars);
         }
 
         @Override
@@ -76,7 +71,7 @@ public class EventFragment extends ListFragment {
             // Make sure we have a view to work with (may have been given null)
             View itemView = convertView;
             if (itemView == null) {
-                itemView = getLayoutInflater().inflate(R.layout.fragment_eventlist, parent, false);
+                itemView = getLayoutInflater().inflate(R.layout.item_view, parent, false);
             }
 
             // Find the car to work with.
@@ -101,6 +96,5 @@ public class EventFragment extends ListFragment {
             return itemView;
         }
     }
-
 }
- */
+
