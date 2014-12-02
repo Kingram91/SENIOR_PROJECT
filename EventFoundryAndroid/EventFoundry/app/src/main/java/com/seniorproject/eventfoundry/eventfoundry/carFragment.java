@@ -75,7 +75,7 @@ public class carFragment extends Fragment implements AbsListView.OnItemClickList
         }
 
         // TODO: Change Adapter to display your content
-        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+        mAdapter = new ArrayAdapter<DummyContent.EventItem>(getActivity(),
                 android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);
     }
 
@@ -117,7 +117,7 @@ public class carFragment extends Fragment implements AbsListView.OnItemClickList
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-            mListener.onFragmentInteraction(DummyContent.ITEMS.get(position).id);
+            mListener.onFragmentInteraction(DummyContent.ITEMS.get(position).eventID);
         }
     }
 
@@ -148,5 +148,7 @@ public class carFragment extends Fragment implements AbsListView.OnItemClickList
         // TODO: Update argument type and name
         public void onFragmentInteraction(String id);
     }
+
+
 
 }

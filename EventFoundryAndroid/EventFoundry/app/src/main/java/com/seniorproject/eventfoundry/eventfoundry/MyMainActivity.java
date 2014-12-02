@@ -71,10 +71,17 @@ public class MyMainActivity extends Activity
                 break;
             case 1:
 
+<<<<<<< HEAD
                 //Discover
                 mTitle = getString(R.string.title_savedevents);
 //                fragment = new carFragment();
 //                fragmentManager.beginTransaction().replace(R.id.container,fragment).commit();
+=======
+                //Disc over
+                //mTitle = getString(R.string.title_discover);
+                fragment = new carFragment();
+                fragmentManager.beginTransaction().replace(R.id.container,fragment).commit();
+>>>>>>> 5912346d4d8c6792171d2f5797d2e04be94f3c6c
                 break;
             case 2:
                 //Mytickets
@@ -82,11 +89,16 @@ public class MyMainActivity extends Activity
                 break;
             case 3:
                 //Saved Events
+<<<<<<< HEAD
                 mTitle = getString(R.string.title_savedevents);
 
                 intent = new Intent(this, Shedule.class);
                 startActivity(intent);
 
+=======
+                //mTitle = getString(R.string.title_savedevents);
+                //startActivity(intent2);
+>>>>>>> 5912346d4d8c6792171d2f5797d2e04be94f3c6c
                 break;
 
             case 4:

@@ -5,10 +5,6 @@
     <uses-sdk
         android:maxSdkVersion="21"
         android:minSdkVersion="8" />
-
-    <!-- To access Google+ APIs: -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    package="com.seniorproject.eventfoundry.eventfoundry" > 
     <!-- SDK min version -->
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -129,14 +125,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
         </activity>
-
-        <activity android:name="com.seniorproject.eventfoundry.eventfoundry.frag4"
-            android:label="Event List"
-            android:parentActivityName="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.seniorproject.eventfoundry.eventfoundry.MyMainActivity" />
-            </activity>
 
 
     </application>
